@@ -14,13 +14,13 @@ Step 2:The services can be run on the background with command:
 
 Step 3: Start an interactive MongoDb shell
 
-docker exec -it mongo0 mongo --port 30000
+* `docker exec -it mongo0 mongo --port 30000`
 
 Step 4: Configure the replica set
 
 From the MongoDb shell, type (or paste) the following
 
-config={"_id":"rs0","members":[{"_id":0,"host":"mongo0:30000"},{"_id":1,"host":"mongo1:30001"},{"_id":2,"host":"mongo2:30002"}]}
+* `config={"_id":"rs0","members":[{"_id":0,"host":"mongo0:30000"},{"_id":1,"host":"mongo1:30001"},{"_id":2,"host":"mongo2:30002"}]}`
 
 If you use this, you probably have to update your hosts file, as well.
 
@@ -36,11 +36,11 @@ Step 6: Initiate the replica set
 
 Still in the MongoDb shell, type (or paste) the following
 
-rs.initiate(config);
+* `rs.initiate(config);`
 
 Now you should be able to connect to the replica set using the following connection string
 
-mongodb://127.0.0.1:30000,127.0.0.1:30001,127.0.0.1:30002/?replicaSet=rs0
+* `mongodb://127.0.0.1:30000,127.0.0.1:30001,127.0.0.1:30002/?replicaSet=rs0`
 
 ## Run the Spring Application
 
