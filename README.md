@@ -54,7 +54,9 @@ To run the project, just run one of the following commands:
 
     ./mvn spring-boot:run
 
-(https://github.com/tugayesilyurt/spring-reactive-mongodb-master-slave/blob/main/assets/primary-secondary.PNG)
+- **Mongodb primary secondary**
+
+![Mongodb Replica Set](https://github.com/tugayesilyurt/spring-reactive-mongodb-master-slave/blob/main/assets/primary-secondary.PNG)
 
 ### EndPoints ###
 
