@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "ae11589d-11f0-4118-a990-e55d360149c1",
+		"name": "spring-mongodb-example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add Hotel",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"123456789\",\r\n    \"name\" : \"rixos\",\r\n    \"rooms\" : 250\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/v1/hotels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"v1",
+						"hotels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Hotels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/v1/hotels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"v1",
+						"hotels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Findby Less Rooms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7000/v1/hotels/rooms/41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"v1",
+						"hotels",
+						"rooms",
+						"41"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
